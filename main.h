@@ -30,4 +30,6 @@ int print_binary(va_list binary);
 int print_uni(va_list arr);
 int print_octal(va_list arr);
 int print_hex(va_list arr);
+int print_HEX(va_list arr);
+
 #endif /* MAIN_H */
