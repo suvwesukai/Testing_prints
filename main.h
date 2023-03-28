@@ -28,5 +28,6 @@ int print_char(va_list arr);
 int print_string(va_list arr);
 int print_int(va_list arr);
 int print_binary(va_list binary);
+int print_uni(va_list arr);
 
 #endif /* MAIN_H */
