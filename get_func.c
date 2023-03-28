@@ -18,13 +18,6 @@ int (*get_func(char s))(va_list)
 		{"d", print_int},
 		{"i", print_int},
 		{"b", print_binary},
-		{"u", print_unsigned},
-		{"o", print_octal},
-		{"x", print_hex},
-		{"X", print_HEX},
-		{"p", print_addr},
-		{"r", print_rev},
-		{"R", print_rot},
 		{NULL, NULL}
 	};
 

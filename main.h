@@ -6,6 +6,7 @@
 #include <limits.h>
 #include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * struct conv - struct for printer functions
@@ -27,12 +28,5 @@ int print_char(va_list arr);
 int print_string(va_list arr);
 int print_int(va_list arr);
 int print_binary(va_list binary);
-int print_unsigned(va_list arr);
-int print_octal(va_list arr);
-int print_hex(va_list arr);
-int print_HEX(va_list arr);
-int print_addr(va_list arr);
-int print_rev(va_list arr);
-int print_rot(va_list arr);
 
 #endif /* MAIN_H */

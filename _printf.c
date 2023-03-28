@@ -13,13 +13,14 @@ int _printf(const char *format, ...)
 
 	if (format != NULL)
 	{
-		int i, count = 0;
+		int i;
 		va_list arr;
-		int (*specifier)(va_list);
+		int (*s)(va_list);
 
 		va_start(arr, format);
 		if (format[0] == '%' && format[1] == '\0')
 			return (-1);
+		count = 0;
 		for (i = 0; format[i] != '\0'; i++)
 		{
 			if (format[i] == '%')
@@ -31,9 +32,9 @@ int _printf(const char *format, ...)
 				}
 				else if (format[i + 1] != '\0')
 				{
-					specifier = get_func(format[i + 1]);
-					if (specifier != NULL)
-						count += specifier(arr);
+					s = get_func(format[i + 1]);
+					if (s)
+						count += s(arr);
 					else
 					{
 						count += _putchar(format[i]);
